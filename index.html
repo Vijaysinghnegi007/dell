@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dell</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dropdown"></div>
+    <section class="form_section">
+        <div class="backdrop">
+            <div class="sign_up_heading">
+                <h2>Signup Form </h2> <i class="fa-solid fa-xmark" onclick="formshow()"></i>
+
+            </div>
+            <form id="signupForm">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tel">Email:</label>
+                <input type="tel" id="tel" name="tel" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!---------------- header tab started------------>
+
+    <header class="header_tab">
+        <nav class="navbar_tab">
+            <div class="icon"><i class="fa-solid fa-bars" onclick="hanburger()"></i>
+                <div class="canvas_hide ">
+
+                    <div>Artificial Intelligence</div>
+
+                    <div class="canvas_hide_product" onclick="product(event)">Product <i
+                            class="fa-solid fa-angle-right"></i>
+                        <div class="canvas_product_menu_hide">
+
+                            <div class="back" onclick="product_remove(event)">&lt; back </div>
+
+                            <div class="canvas_hide_product_heading">Product</div>
+
+                            <div class="canvas_hide_laptop" onclick="laptop(event)">Laptops <i
+                                    class="fa-solid fa-angle-right"></i>
+
+                                <div class="canvas_hide_laptop_menu">
+
+                                    <div class="back" onclick="laptop_remove(event)">&lt; back</div>
+                                    <div class="canvas_hide_laptop_heading">Laptops</div>
+                                    <div>For Home</div>
+                                    <div>For Business</div>
+                                </div>
+
+                            </div>
+                            <div>Desktop & All-in-Ones <i class="fa-solid fa-angle-right"></i></div>
+                            <div>Gaming <i class="fa-solid fa-angle-right"></i> </div>
+                            <div>Workstations</div>
+                            <div>Thin Clients</div>
+                            <div>Apex</div>
+                            <div>Servers</div>
+                            <div>Data Storage</div>
+                            <div>Data Protection</div>
+                            <div>Networking</div>
+                            <div>Hyperconverged Infrastructure</div>
+                            <div>Monitors <i class="fa-solid fa-angle-right"></i></div>
+                            <div>Electronics & Accessories <i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="">Solution <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="">Services <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="">Support <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="">Deals <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="">Find A Store</div>
+                </div>
+            </div>
+
+            <div class="logo"><img src="images/logo media.jpg" height="5rem" alt="">
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Search Dell" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="sign_in">
+                <i class="fa-regular fa-user" onclick="tabformshow()"></i>
+                <div class="sign_in_form_tab">
+                    <span class="close-btn" onclick="tabformhide()">×</span> <!-- Close button -->
+                    <h3>Welcome to Dell</h3>
+                    <p>My Account</p>
+                    <ul>
+                        <li>Place orders quickly and easily</li>
+                        <li>View orders and track your shipping status</li>
+                        <li>Create and access a list of your products</li>
+                    </ul>
+                    <a href="login.html"><input type="button" value="Sign In" class="button button-primary"></a>
+                    <input type="button" value="Create an Account" class="button button-secondary">
+                    <input type="button" value="Premier Sign In" class="button button-secondary">
+                    <input type="button" value="Partner Program Sign In" class="button button-secondary">
+                </div>
+            </div>
+
+
+            <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+        </nav>
+    </header>
+
+    <!--=======================header main started==========================-->
+
+    <header class="header_main">
+        <nav class="navbar_main">
+            <section class="one">
+                <div class="left">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" />
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Search Dell" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="sign_in">
+                        <i class="fa-regular fa-user"></i>
+                        Sign in
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="sign_in_form">
+                            <form>
+                                <h3>Welcome to Dell</h3>
+                                <p>My Account</p>
+                                <ul>
+                                    <li>Place order quickly and easily</li>
+                                    <li>View order and track your shipping status</li>
+                                    <li>Create and access a list of your products</li>
+                                </ul>
+                                <a href="login.html"><input type="button" value="Sign in"></a>
+                                <input type="button" value="Create an Account">
+                                <input type="button" value="Premier Sign In">
+                                <input type="button" value="Partner Program Sign In">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contact_us">
+                        <i class="fa-solid fa-headset"></i>
+                        Contact Us
+                    </div>
+                    <div class="language">
+                        <i class="fa-solid fa-globe"></i>
+                        Language
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="kart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="kart_content">
+                            <h3>Your Carts</h3>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two">
+                <div class="ai">Artificial Intelligence</div>
+                <div class="product">
+                    Product
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="product_menu">
+                        <div class="laptops">
+                            Laptops<i class="fa-solid fa-angle-right"></i>
+                            <div class="laptops_menu">
+                                <div>For Home</div>
+                                <div>For Business</div>
+                            </div>
+                        </div>
+                        <div>Desktop & All-in-Ones <i class="fa-solid fa-angle-right"></i></div>
+                        <div>Gaming <i class="fa-solid fa-angle-right"></i> </div>
+                        <div>Workstations</div>
+                        <div>Thin Clients</div>
+                        <div>Apex</div>
+                        <div>Servers</div>
+                        <div>Data Storage</div>
+                        <div>Data Protection</div>
+                        <div>Networking</div>
+                        <div>Hyperconverged Infrastructure</div>
+                        <div>Monitors <i class="fa-solid fa-angle-right"></i></div>
+                        <div>Electronics & Accessories <i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="solution">
+                    Solution
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="solution_menu">
+
+                    </div>
+                </div>
+                <div class="services">
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="support">
+                    Support
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="deals">
+                    Deals
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="find_a_store">Find a Store</div>
+            </section>
+        </nav>
+    </header>
+
+    <!--============== slider section started============= -->
+    <section class="image_slider_section" onmouseover="stopAutoSlide()" onmouseout="startAutoSlide()">
+        <div class="slider">
+            <div class="sliders">
+                <button class="back_button">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <!-- Slide 1 -->
+                <figure class="slide active">
+                    <img src="images/laptop 1.avif" alt="Laptop 1">
+                    <div class="card_content">
+                        <p class="laptop_name">XPS 13 Plus</p>
+                        <p class="price">Starting at ₹1,29,999.99</p>
+                    </div>
+                </figure>
+
+                <!-- Slide 2 -->
+                <figure class="slide">
+                    <img src="images/laptop 2.avif" alt="Laptop 2">
+                    <div class="card_content">
+                        <p class="laptop_name">Latitude 7420</p>
+                        <p class="price">Starting at ₹75,499.99</p>
+                    </div>
+                </figure>
+
+                <!-- Slide 3 -->
+                <figure class="slide">
+                    <img src="images/laptop 3.avif" alt="Laptop 3">
+                    <div class="card_content">
+                        <p class="laptop_name">G15 Gaming</p>
+                        <p class="price">Starting at ₹85,299.99</p>
+                    </div>
+                </figure>
+
+                <button class="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--============== product section started============= -->
+
+    <section class="product_section">
+
+        <!--==============card one==================-->
+        <div class="card">
+            <div class="card_one">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(0)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(0)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Inspiron 14 5000</p>
+                <p>Starting at ₹39,999.99</p>
+            </div>
+        </div>
+        <!--=============card two================ -->
+        <div class="card">
+            <div class="card_two">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(1)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(1)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>XPS 13 Plus</p>
+                <p>Starting at ₹1,29,999.99</p>
+            </div>
+        </div>
+        <!--=============card three================ -->
+        <div class="card">
+            <div class="card_three">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(2)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(2)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Latitude 7420</p>
+                <p>Starting at ₹75,499.99</p>
+            </div>
+        </div>
+        <!--=============card four================ -->
+        <div class="card">
+            <div class="card_four">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(3)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(3)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>G15 Gaming</p>
+                <p>Starting at ₹85,299.99</p>
+            </div>
+        </div>
+        <!--===============card five================ -->
+
+        <div class="card">
+            <div class="card_five">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(4)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(4)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Precision 3551</p>
+                <p>Starting at ₹1,55,999.99</p>
+            </div>
+        </div>
+        <!-- =============card six================= -->
+        <div class="card">
+            <div class="card_six">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(5)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(5)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Alienware x17 R2</p>
+                <p>Starting at ₹2,10,999.99</p>
+            </div>
+        </div>
+
+        <!-- =============card seven================= -->
+        <div class="card">
+            <div class="card_seven">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(6)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(6)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Vostro 3400</p>
+                <p>Starting at ₹37,499.99</p>
+            </div>
+        </div>
+
+        <!-- =============card eight================= -->
+        <div class="card">
+            <div class="card_eight">
+                <div class="like"><i class="fa-solid fa-heart" onclick="Like(7)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="Cart(7)"></i></div>
+            </div>
+            <div class="card_content">
+                <p>OptiPlex 5090</p>
+                <p>Starting at ₹58,999.99</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--===============middle section started=================-->
+
+    <section class="middle_section">
+        <div class="middle_top">
+            <div class="middle_top_left">
+                <div class="middle_image">
+                    <img src="images/middle.jpg" alt="">
+                </div>
+                <div class="middle_top_left_content">
+                    <p>
+                        Customers report dell APEX drives more effcient and effective IT operations with up to:
+                    </p>
+                    <a href="#">Explore Business Value of Dell APEX &nbsp;<i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+            <div class="middle_top_right_content">
+                <div>
+                    <p class="percent"><span class="Num1">0</span>%</p>
+                    <p>faster to display new capacity</p>
+                </div>
+                <div>
+                    <p class="percent"><span class="Num2">0</span>%</p>
+                    <p>faster to display new capacity</p>
+                </div>
+                <div>
+                    <p class="percent"><span class="Num3">0</span>%</p>
+                    <p>faster to display new capacity</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle_bottom">
+            <div class="middle_bottom_left">
+                <div>See Dell APEX workloads and industry use cases</div>
+                <a href="#">Explore Use Cases &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="Middle_bottom_right">
+                <div>
+                    Implement and stragize with Dell APEX value-added services
+                </div>
+                <a href="#">Experience Professional Services for Dell APEX &nbsp;<i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--=================== FAQ section started ====================-->
+
+    <section class="accordion_section">
+        <p class="faq">FAQ</p>
+        <div class="accordion">
+
+            <div class="question" onclick="Acc(0)">
+                <h3>How can I track my Dell order?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    You can track your Dell order by visiting the "Order Status" page on Dell's website. Enter your
+                    order number
+                    and the
+                    email address used to place the order to see the current status and estimated delivery date.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="question" onclick="Acc(1)">
+                <h3>What is Dell's return policy?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    Dell offers a 30-day return policy on most products. To initiate a return, visit the "Returns"
+                    section on
+                    Dell's
+                    website, enter your order number, and follow the provided instructions. Some items may be subject to
+                    restocking fees,
+                    and custom-built products may not be eligible for return.
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="question" onclick="Acc(2)">
+                <h3>How can I perform a factory reset on my Dell computer?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    To perform a factory reset on your Dell computer, begin by backing up all important data as the
+                    reset will
+                    erase all
+                    files. Restart your computer and press F8 repeatedly as it boots up until the "Advanced Boot
+                    Options" menu
+                    appears.
+                    Select "Repair Your Computer" and press Enter. Choose your keyboard layout and click "Next." Log in
+                    with your
+                    administrative account, select "Dell Factory Image Restore," and click "Next." Follow the on-screen
+                    instructions to
+                    complete the process. For newer models, you might use the Dell OS Recovery Tool available on Dell's
+                    website,
+                    which
+                    requires downloading the tool and creating a USB recovery drive.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="question" onclick="Acc(3)">
+                <h3>How can I update the firmware on my Dell device?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    To update the firmware on your Dell device, visit the "Support" section of Dell's website, enter
+                    your device's
+                    service
+                    tag or model number, and download the latest firmware updates from the "Drivers & Downloads"
+                    section. Follow
+                    the
+                    provided instructions to install the update.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="question" onclick="Acc(4)">
+                <h3>What should I do if my Dell laptop won’t turn on?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    If your Dell laptop won’t turn on, ensure the power adapter is securely connected and the power
+                    outlet is
+                    working.
+                    Remove any external devices such as USB drives or external hard drives. Perform a hard reset by
+                    removing the
+                    battery (if
+                    possible), disconnecting the power adapter, and holding the power button for 30 seconds. Reconnect
+                    the power
+                    adapter and
+                    try to turn on the laptop. Check for any diagnostic LED codes or beeps and refer to the user manual
+                    or Dell's
+                    support
+                    site for their meanings. If the laptop still won’t turn on, contact Dell Support for further
+                    assistance.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="question" onclick="Acc(5)">
+                <h3>What are the common causes of overheating in Dell laptops and how can I prevent it?</h3>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+                <p>
+                    Common causes of overheating in Dell laptops include dust buildup, blocked air vents, high ambient
+                    temperature, and
+                    intensive applications. To prevent overheating, use compressed air to remove dust and debris from
+                    the vents.
+                    Ensure
+                    proper ventilation by placing the laptop on a hard, flat surface and avoiding using it on soft
+                    surfaces that
+                    can block
+                    vents. An external cooling pad can help dissipate heat. Use balanced or power saver modes to reduce
+                    heat
+                    generation and
+                    avoid running demanding applications for extended periods. Ensure the system firmware and drivers
+                    are up to
+                    date, as
+                    updates can include thermal management improvements.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==================== footer section started ====================-->
+
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="footer_left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle_one">
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle_two">
+                <ul>
+                    <li>Support/Whatsapp :</li>
+                    <li><a href="tel:+911234567890">
+                            +911234567890
+                        </a>
+
+                    </li>
+                    <li><a href="#">info@dell.in</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+
+                            <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li>Sign Up Newsletter</li>
+                    <li>
+                        <p>Get updates by subscribe our weekly newsletter</p>
+                    </li>
+                    <li><input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="button" value="Subscribe">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
